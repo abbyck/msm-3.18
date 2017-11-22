@@ -7768,8 +7768,8 @@
 						qcom,pon-type = <0x0>;
 						qcom,pull-up = <0x1>;
 						qcom,support-reset = <0x1>;
-						qcom,s1-timer = <0x1180>;
-						qcom,s2-timer = <0x7d0>;
+						qcom,s1-timer = <10256>; //<0x1180>;
+						qcom,s2-timer = <2000>; // <0x7d0>;
 						qcom,s2-type = <0x7>;
 						linux,code = <0x74>;
 					};
