@@ -1,9 +1,9 @@
 #!/bin/bash
-#echo "> Copiando modulos a la sdcard"
+#echo "> Copying modules to the SD card"
 #adb push /media/psf/Home/Desktop/kmodules /sdcard
-echo "> Reiniciando en modo fastboot"
+echo "> Restarting in fastboot mode"
 adb reboot bootloader
-echo "> Flasheando boot.img al dispositivo..."
+echo "> Flashing boot.img to the device..."
 fastboot flash boot arch/arm64/boot/boot.img
-echo "> Reiniciando el dispotivo..."
+echo "> Restarting device..."
 fastboot reboot
